@@ -1,0 +1,32 @@
+
+.containerImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image {
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.containerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.containerButton > button {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+    background-color: #0F67B1;
+    border: 0px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
