@@ -30,7 +30,7 @@ export default function BoardAI() {
         if (!xIsNext && !isAIMoving && !calculateWinner(board, boardSize)) {
             makeAIMove(board, history.length);
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [xIsNext, isAIMoving, board, boardSize, history.length]);
 
     const handleClick = (index) => {
@@ -110,10 +110,16 @@ export default function BoardAI() {
 
     const winner = calculateWinner(board, boardSize);
     let status;
+    let statusClass;
     if (winner) {
         status = "Winner: " + winner;
+        statusClass = styles.winnerStatus;
+    } else if (board.every(square => square !== null)) {
+        status = "It's a draw";
+        statusClass = styles.drawStatus;
     } else {
         status = "Next player : " + (xIsNext ? "X" : "O");
+        statusClass = styles.nextPlayerStatus;
     }
 
     const router = useRouter();
@@ -124,8 +130,7 @@ export default function BoardAI() {
 
     return (
         <>
-
-            <Header/>
+            <Header />
             <div className={styles.inputContainer}>
                 <label htmlFor="boardSize">Board Size: </label>
                 <input
@@ -137,8 +142,8 @@ export default function BoardAI() {
                     onInput={handleInputChange}
                 />
             </div>
-            <div className={styles.status}>
-                {winner ? <span className={styles.winnerText}>Winner: {winner}</span> : `Next player: ${xIsNext ? 'X' : 'O'}`}
+            <div className={`${styles.status} ${statusClass}`}>
+                {status}
             </div>
             <div className={styles.board}>
                 {[...Array(boardSize)].map((_, row) => (
@@ -176,12 +181,11 @@ export default function BoardAI() {
                 ) : (
                     <ul>
                         {scoreHistory.map((winner, index) => (
-                            <li key={index}>Game {index + 1}: Winner - {winner}</li>
+                            <li key={index}>Game {index + 1} : Winner - {winner}</li>
                         ))}
                     </ul>
                 )}
             </div>
-            
         </>
     );
 }
