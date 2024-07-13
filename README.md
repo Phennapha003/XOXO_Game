@@ -27,3 +27,6 @@ Step 3 : Running the Development Server ``` npm run dev ```
 ### calculateWinner
 ![image](https://imgur.com/uOABbD8.jpg)
 ---
+
+## Note
+You can try playing the game from [XOXO_GAME](xoxo-game-snowy.vercel.app)
