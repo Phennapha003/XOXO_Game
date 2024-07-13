@@ -18,5 +18,12 @@ Step 3 : Running the Development Server ``` npm run dev ```
 ### handleClick
 ![image](https://imgur.com/iyyvXqw.jpg)
 ---
-
-
+### makeAIMove
+![image](https://imgur.com/fNSCMO9.jpg)
+---
+### handleReset
+![image](https://imgur.com/xo3Txqx.jpg)
+---
+### calculateWinner
+![image](https://imgur.com/uOABbD8.jpg)
+---
