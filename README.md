@@ -4,17 +4,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Make sure you have Node.js and npm installed on your machine. You can download and install them from [Node.js official website](https://nodejs.org/).
 
-## Setup and Run Program
-Step 1 Install dependencies
-``` bash
-#Install dependencies
-npm install
-```
+## Setup and Run Project
+Step 1 : Install Visual Studio Code, node.js / Install dependencies ``` npm install ```
 
-Step 2 Running the Development Server
-``` bash
-#Running the Development Server
-npm run dev
-```
+Step 2 : Open project "XOXO_Game" with Visual Studio Code.
+
+Step 3 : Running the Development Server ``` npm run dev ```
 
 
