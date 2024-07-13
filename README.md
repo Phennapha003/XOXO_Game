@@ -29,4 +29,4 @@ Step 3 : Running the Development Server ``` npm run dev ```
 ---
 
 ## Note
-You can try playing the game from [XOXO_GAME](xoxo-game-snowy.vercel.app)
+You can try playing the game from [XOXO_GAME](https://xoxo-game-snowy.vercel.app/)
