@@ -11,4 +11,12 @@ Step 2 : Open project "XOXO_Game" with Visual Studio Code.
 
 Step 3 : Running the Development Server ``` npm run dev ```
 
+## Design Program
+![image](https://imgur.com/olHg48q.jpg)
+
+## Algorithm
+### handleClick
+![image](https://imgur.com/iyyvXqw.jpg)
+---
+
 
